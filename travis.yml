@@ -11,5 +11,9 @@ jobs:
     - stage: Deploy dev
       if: branch = develop
       script:
-        - secho "Deploy dev"
+        - echo "Deploy dev"
         
+     - stage: Deploy test   
+       if: branch = develop
+       script:
+        - echo "Deploy test"
